@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelSDK", "AccelSDK\AccelSDK.csproj", "{A7A7F9C5-2C6E-4D4C-BBBA-0AC6D8331022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelServer", "AccelServer\AccelServer.csproj", "{2270859F-EC57-4302-84E8-F2C29383DA88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryMappedFileManager", "MemoryMappedFileManager\MemoryMappedFileManager.csproj", "{67562D75-378E-48C4-83F2-1F05A51B8B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccelSample", "AccelSample\AccelSample.csproj", "{A39E0649-F10E-4B9F-AC83-F07D4DA47D26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7A7F9C5-2C6E-4D4C-BBBA-0AC6D8331022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A7F9C5-2C6E-4D4C-BBBA-0AC6D8331022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A7F9C5-2C6E-4D4C-BBBA-0AC6D8331022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A7F9C5-2C6E-4D4C-BBBA-0AC6D8331022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2270859F-EC57-4302-84E8-F2C29383DA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2270859F-EC57-4302-84E8-F2C29383DA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2270859F-EC57-4302-84E8-F2C29383DA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2270859F-EC57-4302-84E8-F2C29383DA88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67562D75-378E-48C4-83F2-1F05A51B8B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67562D75-378E-48C4-83F2-1F05A51B8B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67562D75-378E-48C4-83F2-1F05A51B8B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67562D75-378E-48C4-83F2-1F05A51B8B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39E0649-F10E-4B9F-AC83-F07D4DA47D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39E0649-F10E-4B9F-AC83-F07D4DA47D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39E0649-F10E-4B9F-AC83-F07D4DA47D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39E0649-F10E-4B9F-AC83-F07D4DA47D26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
