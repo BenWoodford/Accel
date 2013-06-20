@@ -14,12 +14,12 @@ namespace AccelServer
     {
         static void Main(string[] args)
         {
-            PipePacket pipe = new PipePacket();
+            PipePacket[] pipes = new PipePacket[2] { new PipePacket(), new PipePacket() };
             MappedDataFile manager = new MappedDataFile();
 
             while (true)
             {
-                manager.Write(pipe);
+                manager.Write(pipes);
                 Thread.Sleep(5000);
             }
         }

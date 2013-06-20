@@ -9,10 +9,10 @@ namespace AccelSDK.Events
 {
     public class ReceivedAccelServDataArgs : EventArgs
     {
-        public PipePacket Packet;
+        public PipePacket[] Packets;
         internal ReceivedAccelServDataArgs(byte[] data, long length)
         {
-            Packet = PipePacket.FromByteArray(data);
+            Packets = PipePacket.FromByteArray(data);
         }
     }
 }

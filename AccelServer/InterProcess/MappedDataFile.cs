@@ -19,8 +19,8 @@ namespace AccelServer.InterProcess
             communicator.ReadPosition = 0;
         }
 
-        public void Write(PipePacket packet) {
-            communicator.Write(packet.ToByteArray());
+        public void Write(PipePacket[] packets) {
+            communicator.Write(PipePacket.ToByteArray(packets));
             Console.WriteLine("Wrote packet...");
         }
     }

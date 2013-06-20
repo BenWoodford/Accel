@@ -31,7 +31,19 @@ namespace AccelSample
             Console.Clear();
             PrintInstruction();
 
-            Console.WriteLine("Magnetic Field: {0} {1} {2}", args.Packet.MagneticField.x, args.Packet.MagneticField.y, args.Packet.MagneticField.z);
+            Console.WriteLine("Found {0} Devices", args.Packets.Length);
+            Console.WriteLine();
+
+            int i = 0;
+            foreach(PipePacket packet in args.Packets) {
+                Console.WriteLine("Device {0}", i);
+                Console.WriteLine("Magnetic Field: {0} {1} {2}", packet.MagneticField.x, packet.MagneticField.y, packet.MagneticField.z);
+                Console.WriteLine("Acceleration: {0} {1} {2}", packet.Acceleration.x, packet.Acceleration.y, packet.Acceleration.z);
+                Console.WriteLine("Rotation: {0} {1} {2}", packet.Rotation.yaw, packet.Rotation.pitch, packet.Rotation.roll);
+                Console.WriteLine("Rotation (Rate): {0} {1} {2}", packet.RotationRate.x, packet.RotationRate.y, packet.RotationRate.z);
+                Console.WriteLine();
+                i++;
+            }
         }
     }
 }

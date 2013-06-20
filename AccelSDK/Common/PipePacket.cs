@@ -22,25 +22,25 @@ namespace AccelSDK.Common
             return MagneticField.SizeOf() + Acceleration.SizeOf() + Rotation.SizeOf() + RotationRate.SizeOf();
         }
 
-        public byte[] ToByteArray()
+        public static byte[] ToByteArray(PipePacket[] pipes)
         {
             BinaryFormatter formatter = new BinaryFormatter();
             using (MemoryStream stream = new MemoryStream())
             {
-                formatter.Serialize(stream, this);
+                formatter.Serialize(stream, pipes);
                 stream.Seek(0, SeekOrigin.Begin);
                 return stream.ToArray();
             }
         }
 
-        public static PipePacket FromByteArray(byte[] data)
+        public static PipePacket[] FromByteArray(byte[] data)
         {
-            PipePacket result = new PipePacket();
+            PipePacket[] result;
             using (MemoryStream m = new MemoryStream(data))
             {
                 m.Position = 0;
                 BinaryFormatter formatter = new BinaryFormatter();
-                result = (PipePacket)formatter.Deserialize(m);
+                result = (PipePacket[])formatter.Deserialize(m);
             }
             return result;
         }
