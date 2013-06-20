@@ -9,5 +9,12 @@ namespace AccelSDK.Common
     public class Constants
     {
         public const String PipeName = "AccelServMap";
+
+        enum DeviceType
+        {
+            iPhone,
+            iPad,
+            Android,
+        };
     }
 }

@@ -17,6 +17,8 @@ namespace AccelServer
             PipePacket[] pipes = new PipePacket[2] { new PipePacket(), new PipePacket() };
             MappedDataFile manager = new MappedDataFile();
 
+            TCPServer server = new TCPServer();
+
             while (true)
             {
                 manager.Write(pipes);
